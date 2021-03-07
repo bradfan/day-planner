@@ -4,21 +4,22 @@ currentDay.textContent=date
 // set var to change color depending on the hour of day
 var currentHour = +moment().format("H");
 console.log(currentHour)
-var $timeSlots = $("#time-slots");
+var $timeBlock = $("#time-block");
+var $hour = $("hour").val();
+console.log($hour);
 // for loop appends textarea 
 for(let i=9; i<=17; i++){
-    $timeSlots.append(timeColor(i));
+    $timeBlock.append(timeColor(i));
 }
 // function assigns color to textarea past, present,future
-function timeColor(h){
+function timeColor(hour){
     var background;
-    if(currentHour===h){
+    if(currentHour===hour){
         background = "present";
-    }else if(currentHour < h){
+    }else if(currentHour < hour){
         background = "past";
     }else {
         background = "future"
     }
 }
 
-// be able to loop through every single text area to determine if background = present past or future.
