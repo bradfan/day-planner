@@ -28,31 +28,22 @@ function buildTimeBlock(hour){
 // console.log(buildTimeBlock)
 
 // DRAWN FROM LOCAL STORAGE LESSON 4-22
-
+var saveBtn = document.querySelector(".saveBtn");
 // (html element listening for click on save button)
-// $saveBtn.addEventListener("click", function(event){
-//     event.preventDefault();
-//     var note = document.querySelectorAll(".description").value;
-//     localStorage.setItem("description",JSON.strigify(description));
-    // localStorage.getItem("description", description);
-//     console.log(localStorage);
-// })
+saveBtn.addEventListener("click", function(event){
+    // (should prevent refresh)
+    event.preventDefault();
+    // (establishes "note" as a var recieving info(?) from description class and its value)
+    var description = document.querySelectorAll(".description").value;
+    var description = localStorage.getItem("description")
+    // (should set and get data for local storage in a string)
+    localStorage.setItem("description",description)
+    localStorage.getItem("description", description);
+    console.log(localStorage)
+    // "description" is null
+ })   
 
-// WORKING WITH discord GROUP 3/7
-var saveButton = document.querySelectorAll(".saveBtn");
-var description = document.querySelectorAll(".description")
-// return $timeBlock.append($hour, $textArea, $button);
 
-
-$("saveBtn").on("click", function(e){
-    // should prevents refresh
-e.preventDefault();
-var description = $document.querySelectorAll(".description").textContent;
-// local storage key JSON should parse input
-localStorage.setItem("description", JSON.stringify(description));
-localStorage.getItem("description", description);
-console.log(localStorage);
-});
  
 
 
