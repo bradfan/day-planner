@@ -13,6 +13,10 @@ textarea{
   padding: 10px;
 }
 
+#currentDay{
+  font-size: 30px;
+}
+
 .block{
   background-color: transparent;
 }
