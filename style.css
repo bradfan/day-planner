@@ -13,8 +13,20 @@ textarea{
   padding: 10px;
 }
 
+header{
+  background-image: url(images/header.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.display-3{
+  font-size:30px;
+}
+
 #currentDay{
   font-size: 30px;
+  margin-top: 50%;
 }
 
 .block{
@@ -23,7 +35,7 @@ textarea{
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
