@@ -14,19 +14,19 @@ textarea{
 }
 
 header{
-  background-image: url(images/header.png);
+  background-image: url(images/sundial.jpg);
   background-size: cover;
   background-position: center;
 
 }
 
 .display-3{
-  font-size:30px;
+  font-size:50px;
 }
 
 #currentDay{
   font-size: 30px;
-  margin-top: 50%;
+  margin-top: 10%;
 }
 
 .block{
@@ -70,7 +70,7 @@ header{
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: yellow;
   color: black;
 }
 
