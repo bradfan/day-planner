@@ -25,7 +25,7 @@ header{
 }
 
 #currentDay{
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 10%;
 }
 
@@ -70,7 +70,7 @@ header{
 }
 
 .present {
-  background-color: yellow;
+  background-color:tan;
   color: black;
 }
 

@@ -2,7 +2,6 @@ var date = moment().format("dddd, MMMM Do YYYY, HHmm");
 var currentDay = document.getElementById("currentDay");
 currentDay.textContent = date;
 
-
 // resorted to 'hard coding' each one individually
 var saveBtn8 = document.querySelector(".saveBtn8");
 var saveBtn9 = document.querySelector(".saveBtn9");
@@ -103,15 +102,15 @@ function buildTimeBlock() {
   // this grabs .each class "col-md-10" and grabs the text
   $(".col-md-10").each(function () {
     // grabs the attribute stated on html (this) looks at "col-md-10"
-    var hardHour = $(this).parent().attr("id")[1];
+    var hardHour = $(this).parent().attr("id");
     // real time
-    console.log("hardhour", hardHour)
+    console.log("hardhour", hardHour);
     var currentHour = +moment().format("HH") * 100;
     // string to integers to compare time to stated time
-    console.log("currentHour", currentHour)
+    console.log("currentHour", currentHour);
     if (parseInt(currentHour) > parseInt(hardHour)) {
       $(this).addClass("past");
-    } else if (currentHour === hardHour) {
+    } else if (parseInt(currentHour) === parseInt(hardHour)) {
       $(this).addClass("present");
     } else {
       $(this).addClass("future");
