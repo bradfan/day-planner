@@ -1,6 +1,7 @@
-var date = moment().format("dddd, MMMM Do YYYY, HHmm");
+var date = moment().format("dddd, MMMM Do YYYY");
 var currentDay = document.getElementById("currentDay");
 currentDay.textContent = date;
+console.log("date", date)
 
 // resorted to 'hard coding' each one individually
 var saveBtn8 = document.querySelector(".saveBtn8");

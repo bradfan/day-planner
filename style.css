@@ -21,12 +21,13 @@ header{
 }
 
 .display-3{
-  font-size:50px;
+  font-size:60px;
 }
 
 #currentDay{
   font-size: 40px;
   margin-top: 10%;
+  color: black;
 }
 
 .block{
@@ -65,7 +66,7 @@ header{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: yellow;
   color:black;
 }
 
