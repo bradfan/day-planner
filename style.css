@@ -1,10 +1,10 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -13,24 +13,22 @@ textarea{
   padding: 10px;
 }
 
-header{
+header {
   background-image: url(images/sundial.jpg);
   background-size: cover;
   background-position: center;
-
 }
 
-.display-3{
-  font-size:60px;
+.display-3 {
+  font-size: 60px;
 }
 
-#currentDay{
+#currentDay {
   font-size: 40px;
   margin-top: 10%;
-  color: black;
 }
 
-.block{
+.block {
   background-color: transparent;
 }
 .jumbotron {
@@ -41,37 +39,36 @@ header{
   border-bottom: 10px solid black;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
-
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px solid #000000;
-  border-top-right-radius:15px;
-  border-top-left-radius:15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .past {
   background-color: yellow;
-  color:black;
+  color: black;
 }
 
 .present {
-  background-color:tan;
+  background-color: tan;
   color: black;
 }
 
@@ -84,11 +81,11 @@ header{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #06aed5;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
